@@ -1,0 +1,466 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+/* reset */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q {
+  &:before, &:after {
+    content: "";
+  }
+}
+
+object, embed {
+  vertical-align: top;
+}
+
+legend {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+
+body {
+  font: 14px/1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  color: #000;
+  background: #fff;
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+input {
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+/* フッター
+------------------------------------------------------------*/
+
+#footer {
+  clear: both;
+  padding: 50px 10px 50px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* SEC00
+------------------------------------------------------------*/
+
+/* #about li{
+	float: left;
+	width: calc(100%/2);
+	line-height: 0;
+}
+
+#about img{
+	width: 100%;
+	height: auto;
+}
+
+#about div{
+	width: 100%;
+	height: 100%;
+} */
+
+/* SEC02 Gallery
+------------------------------------------------------------*/
+
+#sec02 {
+  padding: 20 !important;
+}
+
+/* #gallery li{
+	float: left;
+	width: calc(100%/4);
+	line-height: 0;
+}
+
+#gallery img{
+	width: 100%;
+	height: auto;
+} */
+
+/* SEC03 PROJECT
+------------------------------------------------------------*/
+
+#sec03 {
+  padding: 20 !important;
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* SEC04 BRAND
+------------------------------------------------------------*/
+
+.col3 {
+  img {
+    display: block;
+    margin: 0 auto 5px;
+  }
+
+  li {
+    line-height: 2;
+  }
+
+  .img {
+    padding: 80px 50px;
+    margin-bottom: 40px;
+    line-height: 0 !important;
+    background: #f6f6f6;
+  }
+}
+
+#sec04_02 {
+  background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
+  padding: 220px 20px;
+
+  img {
+    width: auto;
+  }
+}
+
+/* SEC05 COMPANY
+------------------------------------------------------------*/
+
+#sec05 p {
+  margin-bottom: 5px;
+}
+
+.col2 li {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#sns {
+  img {
+    padding: 35px 10px 5px 0;
+  }
+
+  a:hover img {
+    opacity: 0.8;
+  }
+}
+
+#map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  z-index: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+  }
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  a#menu {
+    display: none;
+  }
+
+  .panel {
+    display: block !important;
+  }
+
+  #mainnav li {
+    display: inline-block;
+    padding: 50px 25px;
+    font-size: 15px;
+  }
+
+  /* SEC03 PROJECT
+	-----------------*/
+
+  .col3 {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 28%;
+      padding: 0 2.5% 50px;
+      margin-bottom: 0;
+      vertical-align: top;
+      text-align: left;
+    }
+  }
+
+  #footer {
+    padding: 30px 10px 70px 0;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .col2 li {
+    width: 60%;
+    vertical-align: top;
+
+    &:first-child {
+      width: 35%;
+      padding-right: 4%;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .innerS {
+    width: 94%;
+    padding-bottom: 70px;
+  }
+
+  .col3 {
+    li {
+      line-height: 1.7;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+
+    .img {
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #gallery li {
+    float: none;
+    width: 100%;
+  }
+
+  #map iframe {
+    width: 96% !important;
+    left: 2%;
+  }
+
+  #sec04_02 {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+  }
+
+  #headerWrap {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #header h1 {
+    padding-top: 10px;
+
+    img {
+      margin-top: 3px;
+      max-height: 45px;
+      width: auto !important;
+    }
+  }
+
+  a#menu {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  #menuBtn {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    margin: -1px 0 0 -7px;
+    background: #000;
+    transition: 0.2s;
+
+    &:before, &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      background: #000;
+      transition: 0.3s;
+    }
+
+    &:before {
+      margin-top: -7px;
+    }
+
+    &:after {
+      margin-top: 5px;
+    }
+  }
+
+  a#menu .close {
+    background: transparent;
+
+    &:before, &:after {
+      margin-top: 0;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+
+  .panel {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  #mainnav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 500;
+
+    ul {
+      border-bottom: 1px solid #ccc;
+      background: #fff;
+      text-align: left;
+    }
+
+    li a {
+      position: relative;
+      display: block;
+      padding: 15px 25px;
+      border-bottom: 1px solid #ccc;
+      color: #000;
+      font-weight: 400;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 6px;
+        height: 6px;
+        margin: -4px 0 0 0;
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  #mainImg {
+    padding-top: 60px;
+    z-index: -100;
+  }
+
+  .col3 li {
+    margin: 50px auto 0 auto;
+    display: block;
+  }
+
+  section {
+    padding-top: 50px;
+
+    h2 {
+      margin: 0 auto 20px;
+
+      span {
+        padding: 0 30px;
+      }
+    }
+  }
+}
