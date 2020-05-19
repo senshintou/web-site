@@ -1,6 +1,6 @@
 # 先進党 ホームページ
 
-![ヘッダー](https://github.com/senshintou/web-site/blob/master/docs/images/mainImg.jpg?raw=true)
+![ヘッダー](https://raw.githubusercontent.com/senshintou/web-site/master/docs/assets/images/mainImg.jpg)
 
 ## このリポジトリについて
 
