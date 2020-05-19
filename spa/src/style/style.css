@@ -1,0 +1,65 @@
+/* 共通
+------------------------------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  clear: both;
+  padding-top: 30px;
+}
+
+section h2 {
+  font-family: "Pacifico", cursive;
+  width: 60%;
+  margin: 0 auto 40px;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  background: url(../assets/images/borderBlack.png) repeat-x 0 50%;
+  background-size: 1px 1px;
+}
+
+section h2 span {
+  background: #fff;
+  padding: 0 80px;
+}
+
+.inner {
+  width: 94%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.innerS {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.impact {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.impact2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+#mainImg p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Quicksand, sans-serif;
+}

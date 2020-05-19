@@ -1,0 +1,46 @@
+.sec04_02 {
+  background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
+  padding: 220px 20px;
+
+  img {
+    width: auto;
+  }
+}
+
+.innerS {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.impact2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+@media only screen and (max-width: 640px) {
+  .sec04_02 {
+    padding: 50px 20px;
+  }
+
+  .innerS {
+    width: 94%;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  section {
+    padding-top: 50px;
+
+    h2 {
+      margin: 0 auto 20px;
+
+      span {
+        padding: 0 30px;
+      }
+    }
+  }
+}

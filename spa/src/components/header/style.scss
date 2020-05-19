@@ -1,0 +1,216 @@
+/* ヘッダー
+------------------------------------------------------------*/
+
+.header {
+  text-align: center;
+
+  h1 {
+    padding-top: 60px;
+  }
+}
+
+.mainnav a {
+  color: #000;
+}
+
+.mainImg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 528px;
+
+  img {
+    position: absolute;
+    left: 50%;
+    max-width: 1280px;
+    width: 1280px;
+    height: 528px;
+    margin-left: -640px;
+  }
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+input {
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  a.menu {
+    display: none;
+  }
+
+  .panel {
+    display: block !important;
+  }
+
+  .mainnav li {
+    display: inline-block;
+    padding: 50px 25px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+
+    h1 {
+      padding-top: 10px;
+
+      img {
+        margin-top: 3px;
+        max-height: 45px;
+        width: auto !important;
+      }
+    }
+  }
+
+  .headerWrap {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+
+  a.menu {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  .menuBtn {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    margin: -1px 0 0 -7px;
+    background: #000;
+    transition: 0.2s;
+
+    &:before, &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      background: #000;
+      transition: 0.3s;
+    }
+
+    &:before {
+      margin-top: -7px;
+    }
+
+    &:after {
+      margin-top: 5px;
+    }
+  }
+
+  a.menu .close {
+    background: transparent;
+
+    &:before, &:after {
+      margin-top: 0;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+
+  .panel {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .mainnav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 500;
+
+    ul {
+      border-bottom: 1px solid #ccc;
+      background: #fff;
+      text-align: left;
+    }
+
+    li a {
+      position: relative;
+      display: block;
+      padding: 15px 25px;
+      border-bottom: 1px solid #ccc;
+      color: #000;
+      font-weight: 400;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 6px;
+        height: 6px;
+        margin: -4px 0 0 0;
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.sec02 {
+  padding: 20 !important;
+}
+
+.innerS {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 640px) {
+  .innerS {
+    width: 94%;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  section {
+    padding-top: 50px;
+
+    h2 {
+      margin: 0 auto 20px;
+
+      span {
+        padding: 0 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.innerS {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.col2 li {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.impact {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 640px) {
+  .innerS {
+    width: 94%;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .col2 li {
+    width: 60%;
+    vertical-align: top;
+
+    &:first-child {
+      width: 35%;
+      padding-right: 4%;
+    }
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  section {
+    padding-top: 50px;
+
+    h2 {
+      margin: 0 auto 20px;
+
+      span {
+        padding: 0 30px;
+      }
+    }
+  }
+}
