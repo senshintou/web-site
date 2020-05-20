@@ -1,4 +1,4 @@
 rm -fr docs/*
-cp spa/build/* docs/ -r
+cp -r spa/build/* docs/
 cp docs.bk/CNAME docs/
 cp CONTRIBUTING.md docs/README.md
