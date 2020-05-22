@@ -1,4 +1,3 @@
-import React from 'preact/compat';
 import style from './style.scss';
 
 const Home = () => (

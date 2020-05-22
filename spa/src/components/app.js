@@ -1,5 +1,3 @@
-import React from 'preact/compat';
-
 import Header from './header';
 import Home from './home';
 import About from './about';

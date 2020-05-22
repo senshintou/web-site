@@ -1,4 +1,3 @@
-import React from 'preact/compat';
 import { Link } from 'preact-router/match';
 import style from './style.scss';
 
