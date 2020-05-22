@@ -16,7 +16,7 @@ const Header = () => (
           <ul>
             <li><Link href="/">ホーム画面へ</Link></li>
             <li><a href="#about">先進党とは</a></li>
-            <li><a href="#poricy">政策情報</a></li>
+            <li><a href="#policy">政策情報</a></li>
             <li><a href="#report">活動レポート</a></li>
             <li><a href="#recruit">党員募集</a></li>
             <li><a href="#contact">お問い合わせ</a></li>

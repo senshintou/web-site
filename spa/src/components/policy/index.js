@@ -4,7 +4,7 @@ import style from './style.scss';
 const Policy = () => (
   <section id="sec01">
     <header>
-      <h2 id="poricy"><span>政策情報</span></h2>
+      <h2 id="policy"><span>政策情報</span></h2>
     </header>
     <div className={ style.innerS }>
       以下は我々の政策の一部です。詳細は<a href="https://github.com/senshintou/Policy" target="_blank">先進党政策一覧</a>を御覧ください
