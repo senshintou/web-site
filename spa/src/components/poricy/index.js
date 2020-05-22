@@ -1,19 +1,19 @@
-import { h } from 'preact';
-import style from './style.scss'
+import React from 'preact/compat';
+import style from './style.scss';
 
-const Poricy=()=>(
+const Poricy = () => (
   <section id="sec01">
     <header>
       <h2 id="poricy"><span>政策情報</span></h2>
     </header>
-    <div class={style.innerS}>
+    <div className={ style.innerS }>
       以下は我々の政策の一部です。詳細は<a href="https://github.com/senshintou/Policy" target="_blank">先進党政策一覧</a>を御覧ください
-      <ul id="gallery1" class={style.col2}>
+      <ul id="gallery1" className={ style.col2 }>
         <li>
           <img src="assets/images/photo01.jpg" width="426" height="418" alt="" />
         </li>
         <li>
-          <p class={style.impact}>役所手続きのデジタル化<br /></p>
+          <p className={ style.impact }>役所手続きのデジタル化<br /></p>
           <p>
             「この書類は印鑑が必要です」「このシステムは午前9:00から午後5:00までの運用です」
           </p>
@@ -35,12 +35,12 @@ const Poricy=()=>(
           </p>
         </li>
       </ul>
-      <ul id="gallery2" class={style.col2}>
+      <ul id="gallery2" className={ style.col2 }>
         <li>
           <img src="assets/images/photo02.jpg" width="426" height="418" alt="" />
         </li>
         <li>
-          <p class={style.impact}>選挙のデジタル化<br /></p>
+          <p className={ style.impact }>選挙のデジタル化<br /></p>
           <p>今の選挙は限られた時間に投票所まで移動し、</p>
           <p>不正投票を監視するために大きなコストが発生しています。<br /></p>
           <p>我々は選挙をデジタル化します<br /></p>
@@ -56,12 +56,12 @@ const Poricy=()=>(
           <p>より民意を反映した世の中を作ることができます。</p>
         </li>
       </ul>
-      <ul id="gallery3" class={style.col2}>
+      <ul id="gallery3" className={ style.col2 }>
         <li>
           <img src="assets/images/photo03.jpg" width="426" height="418" alt="" />
         </li>
         <li>
-          <p class={style.impact}>リモートワーク推進<br /></p>
+          <p className={ style.impact }>リモートワーク推進<br /></p>
           <p>
             現状、子供の世話に手がかかったり、交通の弁が良くないなどの理由から、
           </p>
@@ -77,12 +77,12 @@ const Poricy=()=>(
           <p>地方活性化とも繋がる労働環境の増強を測ります。</p>
         </li>
       </ul>
-      <ul id="gallery4" class={style.col2}>
+      <ul id="gallery4" className={ style.col2 }>
         <li>
           <img src="assets/images/photo04.jpg" width="426" height="418" alt="" />
         </li>
         <li>
-          <p class={style.impact}>IT人材の育成推進<br /></p>
+          <p className={ style.impact }>IT人材の育成推進<br /></p>
           <p>
             IT政策を押し進めるにあたり、今後ますます人材不足が深刻化していきます。
           </p>
@@ -95,5 +95,5 @@ const Poricy=()=>(
       </ul>
     </div>
   </section>
-)
-export default Poricy
+);
+export default Poricy;
