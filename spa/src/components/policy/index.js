@@ -7,7 +7,11 @@ const Policy = () => (
       <h2 id="policy"><span>政策情報</span></h2>
     </header>
     <div className={ style.innerS }>
-      以下は我々の政策の一部です。詳細は<a href="https://github.com/senshintou/Policy" target="_blank">先進党政策一覧</a>を御覧ください
+      以下は我々の政策の一部です。詳細は
+      <a href="https://github.com/senshintou/Policy" target="_blank" rel='noreferrer'>
+        先進党政策一覧
+      </a>
+      を御覧ください
       <ul id="gallery1" className={ style.col2 }>
         <li>
           <img src="assets/images/photo01.jpg" width="426" height="418" alt="" />
