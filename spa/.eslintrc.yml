@@ -52,3 +52,9 @@ rules:
 
   # タブとスペースを混ぜないで
   no-mixed-spaces-and-tabs: error
+
+  # Preact をインポートしていればJSX有効なのでReactのimportは不要
+  react/react-in-jsx-scope: off
+
+  # 全角スペースは許容
+  no-irregular-whitespace: off
