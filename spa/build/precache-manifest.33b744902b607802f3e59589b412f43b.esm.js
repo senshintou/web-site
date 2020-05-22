@@ -67,15 +67,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/assets/images/woman.jpg"
   },
   {
-    "revision": "e97c95f41138151e1122",
-    "url": "/bundle.25a65.esm.js"
+    "revision": "3fb2dd9735a98fdef054",
+    "url": "/bundle.4ff9a.css"
   },
   {
-    "revision": "e97c95f41138151e1122",
-    "url": "/bundle.97f1e.css"
+    "revision": "3fb2dd9735a98fdef054",
+    "url": "/bundle.78c52.esm.js"
   },
   {
-    "revision": "2a9b3805078832ef0624ca8129f863d9",
+    "revision": "3c779f354ed4d68a9acef9d8f44e9b80",
     "url": "/index.html"
   },
   {

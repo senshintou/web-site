@@ -1,25 +1,24 @@
-import { h } from 'preact';
-import style from './style.scss'
+import style from './style.scss';
 
-const About=()=>(
+const About = () => (
   <div>
-    <section class={style.sec00}>
+    <section className={ style.sec00 }>
       <header>
         <h2 id="about"><span>先進党とは</span></h2>
       </header>
-      <div class={style.innerS}>
-        <ul class={style.about, style.col2}>
+      <div className={ style.innerS }>
+        <ul className={ style.about, style.col2 }>
           <li>
             <img src="assets/images/woman.jpg" width="852" height="418" alt="" />
           </li>
           <li>
-            <p class={style.impact}>先進党は、日本唯一のIT特化政党です<br /><br /></p>
-            <p class={style.impact2}>
+            <p className={ style.impact }>先進党は、日本唯一のIT特化政党です<br /><br /></p>
+            <p className={ style.impact2 }>
               我々は先進技術により、日本を安全で豊かにします
             </p>
-            <p class={style.impact2}>・先進技術で日本を豊かに</p>
-            <p class={style.impact2}>・誰でもわかりやすい、使いやすいシステム</p>
-            <p class={style.impact2}>・安全で不正のない仕組み</p>
+            <p className={ style.impact2 }>・先進技術で日本を豊かに</p>
+            <p className={ style.impact2 }>・誰でもわかりやすい、使いやすいシステム</p>
+            <p className={ style.impact2 }>・安全で不正のない仕組み</p>
           </li>
         </ul>
       </div>
@@ -28,14 +27,14 @@ const About=()=>(
       <header>
         <h2><span>役員紹介</span></h2>
       </header>
-      <div class="innerS">
-        <ul class={style.about, style.col2}>
+      <div className="innerS">
+        <ul className={ style.about, style.col2 }>
           <li>
             <img src="assets/images/kondou.jpg" width="852" height="418" alt="" />
           </li>
           <li>
-            <p class="impact">代表</p>
-            <p class="impact2">近藤祐輝(こんどうゆうき)<br /></p>
+            <p className="impact">代表</p>
+            <p className="impact2">近藤祐輝(こんどうゆうき)<br /></p>
             <p>
               私は現在、フリーランスとしてSEをする傍ら、正社員SEの方に対して、フリーランスへの転向サポートを法人として行っています。
             </p>
@@ -53,14 +52,14 @@ const About=()=>(
           </li>
         </ul>
       </div>
-      <div class="innerS">
-        <ul class={style.about, style.col2}>
+      <div className="innerS">
+        <ul className={ style.about, style.col2 }>
           <li>
             <img src="assets/images/joya.jpg" width="265" height="300" alt="" />
           </li>
           <li>
-            <p class="impact">副代表</p>
-          <p class="impact2">城谷弘明(じょうやひろあき)<br /></p>
+            <p className="impact">副代表</p>
+            <p className="impact2">城谷弘明(じょうやひろあき)<br /></p>
             <p>
               学部時代は経営学やマーケティング、会計などを学び、
             </p>
@@ -91,5 +90,5 @@ const About=()=>(
       </div>
     </section>
   </div>
-)
-export default About
+);
+export default About;

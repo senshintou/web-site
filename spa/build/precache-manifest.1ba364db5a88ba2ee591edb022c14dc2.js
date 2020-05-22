@@ -67,15 +67,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/assets/images/woman.jpg"
   },
   {
-    "revision": "e97c95f41138151e1122",
-    "url": "/bundle.97f1e.css"
+    "revision": "3fb2dd9735a98fdef054",
+    "url": "/bundle.3fb2d.js"
   },
   {
-    "revision": "e97c95f41138151e1122",
-    "url": "/bundle.e97c9.js"
+    "revision": "3fb2dd9735a98fdef054",
+    "url": "/bundle.4ff9a.css"
   },
   {
-    "revision": "2a9b3805078832ef0624ca8129f863d9",
+    "revision": "3c779f354ed4d68a9acef9d8f44e9b80",
     "url": "/index.html"
   },
   {
@@ -87,7 +87,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sw-debug.js"
   },
   {
-    "revision": "9e4562f573f87fe026b086b86d326f16",
+    "revision": "e57f710004fabfdf2ec1435cad46002e",
     "url": "/sw-esm.js"
   },
   {
