@@ -3,7 +3,7 @@ import React from 'preact/compat';
 import Header from './header';
 import Home from './home';
 import About from './about';
-import Poricy from './poricy';
+import Policy from './policy';
 import Report from './report';
 import Recruit from './recruit';
 import Contact from './contact';
@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <Home />
       <About />
-      <Poricy />
+      <Policy />
       <Report />
       <Recruit />
       <Contact />

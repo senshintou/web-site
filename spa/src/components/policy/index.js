@@ -1,7 +1,7 @@
 import React from 'preact/compat';
 import style from './style.scss';
 
-const Poricy = () => (
+const Policy = () => (
   <section id="sec01">
     <header>
       <h2 id="poricy"><span>政策情報</span></h2>
@@ -96,4 +96,4 @@ const Poricy = () => (
     </div>
   </section>
 );
-export default Poricy;
+export default Policy;
