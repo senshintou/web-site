@@ -1,0 +1,44 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    # ジョブの動作環境
+    # https://help.github.com/ja/actions/reference/workflow-syntax-for-github-actions
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 'Setup node'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: 'Cache depends'
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+        # 依存のインストールは `yarn --frozen-lockfile` を使用するとlockの更新を回避できる
+        # https://help.github.com/ja/actions/language-and-framework-guides/using-nodejs-with-github-actions#example-using-yarn
+      - name: 'Depends install'
+        run: yarn --frozen-lockfile
+        working-directory: ./spa
+
+      - name: 'Build production files'
+        run: yarn build
+        working-directory: ./spa
+
+        # https://github.com/peaceiris/actions-gh-pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./spa/build
