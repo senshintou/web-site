@@ -1,6 +1,14 @@
+**先進党は解散しました。**
+
+そのためこのReposは管理する意味を無くしたものとし、ソースコードのみ残してArchiveします。  
+解散についての詳細は https://note.com/hiroaking7/n/n3b9d7543c665 を御覧ください。    
+今までContributeして頂いた皆様に厚く御礼申し上げます。
+
+------
+
 # 先進党 ホームページ
 
-![ヘッダー](https://raw.githubusercontent.com/senshintou/web-site/master/docs/assets/images/mainImg.jpg)
+![ヘッダー](./spa/src/assets/images/mainImg.jpg)
 
 ## このリポジトリについて
 
